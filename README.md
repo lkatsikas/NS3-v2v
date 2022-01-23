@@ -1,30 +1,43 @@
-v2v: ns-3 extension for vehicular communications
-========================================================
+# NS3 - v2v
+
+NS-3 module for vehicular communications
+
+## Description
+
+Source code implementation based on “Implementing clustering for vehicular ad hoc networks in NS 3”
+as presented in  WNS3-2015 Call for papers
+
+v2v module is a custom ns-3 extension containing a clustering algorithm implementation for VANETs.
+
+## Getting Started
+
+### Dependencies
+
+* 3.21 version of NS-3 simulator
 
 
-### An overview
-v2v module is a new ns-3 extension containing a clustering algorithm implementation for VANETs and one example on how to use the new model.
+### Building program
 
-*The code is tested in 3.21 version of ns-3 simulator*
+```
+./waf configure --enable-examples`
+./waf
+```
 
+### Executing program
 
-### Build v2v
-Copy and paste the v2v package under src/ folder of the ns-3 simulator.
-
-type the command 
-
-`./waf configure --enable-examples` 
-
-followed by 
-
-`./waf`
-
-in the the root directory of the ns-3 simulator. The files built will be copied in the build/ directory.
+```
+./waf --run v2v-clustering-example
+```
 
 
-### Run the v2v example
-type the command 
+## Authors
 
-`./waf --run v2v-clustering-example`
+Contributors names and contact info
 
-*The source code of the example can be found in the examples/ directory*
+* [lkatsikas](https://github.com/lkatsikas)
+
+## License
+
+This project is licensed under the GNU License - see the LICENSE.md file for details
+
+
